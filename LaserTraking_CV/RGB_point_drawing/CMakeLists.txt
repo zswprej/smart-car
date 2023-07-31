@@ -1,0 +1,7 @@
+cmake_minimum_required(VERSION 3.10)
+project(red_point_drawing)
+set(CMAKE_CXX_STANDARD 11)
+find_package(OpenCV 4.5.0 REQUIRED)
+include_directories(${OpenCV_INCLUDE_DIRS})
+add_executable(red_point_drawing main.cpp)
+target_link_libraries(red_point_drawing ${OpenCV_LIBS})

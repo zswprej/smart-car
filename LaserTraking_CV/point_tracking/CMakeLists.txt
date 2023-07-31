@@ -1,0 +1,7 @@
+cmake_minimum_required(VERSION 3.10)
+project(point_tracking)
+set(CMAKE_CXX_STANDARD 11)
+find_package(OpenCV 4.5.0 REQUIRED)
+include_directories(${OpenCV_INCLUDE_DIRS})
+add_executable(point_tracking point_tracking.cpp)
+target_link_libraries(point_tracking ${OpenCV_LIBS})
