@@ -21,7 +21,7 @@ cv::Mat getLaserMask_green(const cv::Mat& baseframe, const cv::Mat& image){
     cv::Mat diff = image - baseframe;
     cv::Mat greenDiffMask;
      //B G R
-    cv::inRange(diff, cv::Scalar(0, 50, 0), cv::Scalar(255, 255, 255), greenDiffMask);
+    cv::inRange(diff, cv::Scalar(0, 20, 0), cv::Scalar(255, 255, 255), greenDiffMask);
     cv::Mat greenMask;
     cv::inRange(image, cv::Scalar(0, 150, 0), cv::Scalar(150, 255, 150), greenMask);
     cv::Mat whiteMask;
@@ -78,7 +78,7 @@ std::vector<cv::Point> getApproximateShape(const std::vector<cv::Point>& contour
     double perimeter = cv::arcLength(contour, true);
 
     std::vector<cv::Point> points;
-    cv::approxPolyDP(contour, points, perimeter * 0.07, true);
+    cv::approxPolyDP(contour, points, perimeter * 0.20, true);
 
     std::vector<cv::Point> convexPoints;
     cv::convexHull(points, convexPoints);
@@ -151,16 +151,17 @@ int main() {
         }
 
         if(framesNotFound > 25 && contours[contours.size() - 1].size() > 2) {
-            std::vector<cv::Point> approxPoints = getApproximateShape(contours.back());
+          std::vector<cv::Point> approxPoints = getApproximateShape(contours.back());
             contours[contours.size() - 1] = approxPoints;
-            contours.push_back(std::vector<cv::Point>());
+           contours.push_back(std::vector<cv::Point>());
             framesNotFound = 0;
+            frame.setTo(cv::Scalar(0, 0, 0));
         }
 
         cv::RNG rng(666648834);
-        for(int i = 0; i < contours.size(); i++) {
-            if(!contours[i].empty())
-                cv::drawContours(frame, contours, i, cv::Scalar(rng.uniform(100,200), rng.uniform(100, 200), rng.uniform(100, 200)), 10);
+        if (!contours.empty() && !contours.back().empty())
+        {
+                cv::drawContours(frame, contours, contours.size()-1, cv::Scalar(rng.uniform(100,200), rng.uniform(100, 200), rng.uniform(100, 200)), 5);
         }
         if(contours.size() > 1) {
             std::string lastShape = getPolygonName(contours[contours.size() - 2].size());

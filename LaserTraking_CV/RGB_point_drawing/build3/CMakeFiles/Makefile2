@@ -54,10 +54,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/jetson/develop/Pansamic-CV-main/red_point_drawing
+CMAKE_SOURCE_DIR = /home/jetson/develop/smart-car/LaserTraking_CV/RGB_point_drawing
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/jetson/develop/Pansamic-CV-main/red_point_drawing/build1
+CMAKE_BINARY_DIR = /home/jetson/develop/smart-car/LaserTraking_CV/RGB_point_drawing/build3
 
 #=============================================================================
 # Target rules for target CMakeFiles/red_point_drawing.dir
@@ -66,7 +66,7 @@ CMAKE_BINARY_DIR = /home/jetson/develop/Pansamic-CV-main/red_point_drawing/build
 CMakeFiles/red_point_drawing.dir/all:
 	$(MAKE) -f CMakeFiles/red_point_drawing.dir/build.make CMakeFiles/red_point_drawing.dir/depend
 	$(MAKE) -f CMakeFiles/red_point_drawing.dir/build.make CMakeFiles/red_point_drawing.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jetson/develop/Pansamic-CV-main/red_point_drawing/build1/CMakeFiles --progress-num=1,2 "Built target red_point_drawing"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jetson/develop/smart-car/LaserTraking_CV/RGB_point_drawing/build3/CMakeFiles --progress-num=1,2 "Built target red_point_drawing"
 .PHONY : CMakeFiles/red_point_drawing.dir/all
 
 # Include target in all.
@@ -76,9 +76,9 @@ all: CMakeFiles/red_point_drawing.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/red_point_drawing.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/jetson/develop/Pansamic-CV-main/red_point_drawing/build1/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jetson/develop/smart-car/LaserTraking_CV/RGB_point_drawing/build3/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/red_point_drawing.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/jetson/develop/Pansamic-CV-main/red_point_drawing/build1/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jetson/develop/smart-car/LaserTraking_CV/RGB_point_drawing/build3/CMakeFiles 0
 .PHONY : CMakeFiles/red_point_drawing.dir/rule
 
 # Convenience name for target.

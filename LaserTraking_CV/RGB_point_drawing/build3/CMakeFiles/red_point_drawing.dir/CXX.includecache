@@ -6,13 +6,13 @@
 
 #IncludeRegexTransform: 
 
-/home/jetson/develop/Pansamic-CV-main/red_point_drawing/main.cpp
+/home/jetson/develop/smart-car/LaserTraking_CV/RGB_point_drawing/main.cpp
 opencv2/core/core.hpp
 -
 opencv2/highgui/highgui.hpp
 -
 opencv2/imgproc.hpp
-/home/jetson/develop/Pansamic-CV-main/red_point_drawing/opencv2/imgproc.hpp
+/home/jetson/develop/smart-car/LaserTraking_CV/RGB_point_drawing/opencv2/imgproc.hpp
 iostream
 -
 

@@ -1,4 +1,4 @@
-# Install script for directory: /home/jetson/develop/Pansamic-CV-main/red_point_drawing
+# Install script for directory: /home/jetson/develop/smart-car/LaserTraking_CV/RGB_point_drawing
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/jetson/develop/Pansamic-CV-main/red_point_drawing/build1/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/jetson/develop/smart-car/LaserTraking_CV/RGB_point_drawing/build3/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

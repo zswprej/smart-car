@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/jetson/develop/Pansamic-CV-main/red_point_drawing/main.cpp" "/home/jetson/develop/Pansamic-CV-main/red_point_drawing/build1/CMakeFiles/red_point_drawing.dir/main.cpp.o"
+  "/home/jetson/develop/smart-car/LaserTraking_CV/RGB_point_drawing/main.cpp" "/home/jetson/develop/smart-car/LaserTraking_CV/RGB_point_drawing/build3/CMakeFiles/red_point_drawing.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
